@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Error! hay números iguales
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container">
+
+	<h1>Las cuatro cifras tienen que ser distintas</h1>
+    <br>
+    <br>
+    
+<h3><a href="{% url 'ingrese' %}"> Ingrese número secreto nuevamente</a></h3>
+{% endblock %}

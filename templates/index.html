@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Bienvenido a eNe
+{% endblock %}
+
+{% block contenido %}
+<h1> Bienvenido a eNe </h1>
+	<br>
+	<br>
+
+	<h3><a href="{% url 'adivinar' %}"> Jugar a eNe</a></h3>
+	<br>
+	<h3><a href="{% url 'ingrese' %}"> Ingresar número secreto</a></h3>
+
+{% endblock %}

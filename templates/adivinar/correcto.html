@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Correcto! diste con el número secreto
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container">
+<h1>Excelente! </h1>
+<h2>adivinaste el número secreto</h2>
+<h6>Datos: </h6>
+<br>
+	{% for clave,valor in form.items %}
+	<h6>{{ clave|upper }} : {{ valor }}</h6>
+	{% endfor %}
+   
+
+<br>
+<br>
+
+{% endblock %}

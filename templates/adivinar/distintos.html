@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Error! hay cifras que se repiten
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container">
+
+	<h1>Las cuatro cifras tienen que ser distintas</h1>
+    <br>
+    <br>
+    <h2>no se pueden repetir</h2>
+
+<br>
+<br>
+<h3><a href="{% url 'adivinar' %}"> Intente nuevamente</a></h3>
+{% endblock %}

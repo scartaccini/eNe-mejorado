@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Error! número secreto ya ingresado
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container">
+
+	<h1>Actualmente se encuentra un número secreto ingresado</h1>
+    <br>
+    <br>
+    
+
+
+<h3><a href="{% url 'adivinar' %}"> Intenta adivinarlo! </a></h3>
+{% endblock %}

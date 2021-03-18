@@ -5,11 +5,16 @@ Bienvenido a eNe
 
 {% block contenido %}
 <h1> Bienvenido a eNe </h1>
+<h1> "el Número escondido" </h1>
 	<br>
 	<br>
+	<h4>{{ form.num_secreto }}</h4>
+	<br>
+	
 
-	<h3><a href="{% url 'adivinar' %}"> Jugar a eNe</a></h3>
+
+	<h3><a href="{% url 'adivinar' %}">- Jugar a eNe</a></h3>
 	<br>
-	<h3><a href="{% url 'ingrese' %}"> Ingresar número secreto</a></h3>
+	<h3><a href="{% url 'ingrese' %}">- Ingresar número escondido</a></h3>
 
 {% endblock %}

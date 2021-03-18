@@ -1,15 +1,16 @@
 {% extends 'base.html' %}
 {% block titulo %}
-Correcto! diste con el número secreto
+Correcto! encontraste el número escondido
 {% endblock %}
 
 {% block contenido %}
 
 <div class="container">
 <h1>Excelente! </h1>
-<h2>adivinaste el número secreto</h2>
-<h6>Datos: </h6>
+<h2>adivinaste el número escondido</h2>
 <br>
+<h6>Datos: </h6>
+
 	{% for clave,valor in form.items %}
 	<h6>{{ clave|upper }} : {{ valor }}</h6>
 	{% endfor %}
@@ -17,5 +18,6 @@ Correcto! diste con el número secreto
 
 <br>
 <br>
+<h3><a href="{% url 'index' %}"> Inicio </a></h3>
 
 {% endblock %}

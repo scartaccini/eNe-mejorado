@@ -271,7 +271,15 @@ def numeros(request):
         return render(request,'adivinar/adivinar.html') 
 
 def inicio(request):
-    return render(request,'index.html') 
+    if ganador[0]==3:
+        ingreso={"num_secreto":"EL NÚMERO ESCONDIDO FUE ADIVINADO",}
+        return render(request,'index.html', {'form':ingreso}) 
+    elif ganador[0]==2:
+        ingreso={"num_secreto":"EL NÚMERO ESCONDIDO AÚN NO FUE INGRESADO",}
+        return render(request,'index.html', {'form':ingreso})
+    else:
+        ingreso={"num_secreto":"EL NÚMERO ESCONDIDO AÚN NO FUE ADIVINADO",}
+        return render(request,'index.html', {'form':ingreso}) 
 
 
    

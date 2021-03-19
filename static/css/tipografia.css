@@ -10,10 +10,10 @@ h1 {
 }
 
 h2 {
-    font-family: 'Fascinate';
+    font-family: 'Cinzel';
     text-align: center;
-    color: rgb(27, 71, 129);
-    font-size: 28pt;
+    color: rgb(47, 129, 27);
+    font-size: 14pt;
 }
 
 h3 {
@@ -43,3 +43,4 @@ h6 {
     color: rgb(40, 114, 63);
     font-size: 20pt;
 }
+
